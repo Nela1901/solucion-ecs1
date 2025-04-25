@@ -1,12 +1,8 @@
 import math
 
-"""Clase que implementa la sol de segundo grado"""
-
-
 class EcuacionSegundoGrado:
-    """Clase ecuacion de segundo graod"""
-    # Todo Para implementar
-    def __init__(self,a,b,c):
+    """Clase ecuacion de segundo grado"""
+    def __init__(self, a, b, c):
         self.a = a
         self.b = b
         self.c = c
@@ -15,16 +11,17 @@ class EcuacionSegundoGrado:
         self.a = parametroA
         self.b = parametroB
         self.c = parametroC
+
     def solucionESG(self):
         """solucion de la ecuacion de segundo grado"""
         discriminante = math.pow(self.b, 2) - 4 * self.a * self.c
-        if discriminante >= 0:
+        if discriminante >= 0:  # Solo calculamos si las raíces son reales
             raizdiscriminante = math.sqrt(discriminante)
             x1 = (-self.b + raizdiscriminante) / (2 * self.a)
             x2 = (-self.b - raizdiscriminante) / (2 * self.a)
             return x1, x2
         else:
-            return None, None
+            return None, None  # No hay raíces reales
 
     def imprimir_raices(self):
         print("\nEcuación de segundo grado")
