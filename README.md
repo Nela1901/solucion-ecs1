@@ -24,7 +24,7 @@ Además, se implementan **pruebas unitarias** para garantizar el correcto funcio
 
 | Nombre         | Apellidos                  |
 |----------------|--------------------------|
-| Elizabeth] | Inciso Aguilar |
+| Elizabeth | Inciso Aguilar |
 
 ---
 
